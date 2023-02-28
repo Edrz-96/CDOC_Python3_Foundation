@@ -1,5 +1,7 @@
 class Person:
 
+
+
     def __init__(self, first_name, last_name, age):  # Constructor
         self.first_name = first_name  # self = this, refers to the instance
         self.last_name = last_name

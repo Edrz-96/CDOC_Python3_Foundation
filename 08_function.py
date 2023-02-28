@@ -131,6 +131,11 @@ def print_vat(**kwargs: 'VAT, gross and message'):
 
 print(print_vat.__annotations__)
 
+
+def slice(string: str, start: int, end: int) -> str:
+    return start
+
+
 # nonlocal variables
 
 def myfunc1():
@@ -144,3 +149,8 @@ def myfunc1():
 
 
 print(myfunc1())
+
+
+def simple_args(*args):
+    print(args)
+

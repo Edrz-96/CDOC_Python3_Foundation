@@ -17,6 +17,10 @@ discount = False
 age = 32
 # Float
 wallet = 29.95
+
+#Long
+
+
 # Complex
 c = 3 + 3j
 a = complex(2, -1)

@@ -6,6 +6,15 @@
 
 import sys as s
 
+
+my_str = "hello world"
+my_str_as_bytes = str.encode(my_str)
+print(type(my_str_as_bytes)) # ensure it is byte representation
+my_decoded_str = my_str_as_bytes.decode()
+print(type(my_decoded_str)) # ensure it is string representation
+
+
+
 # The print function
 # End=
 print("Print this ", end=" ")
@@ -18,7 +27,7 @@ print(new_list, str("new string"), sep=", ")
 # File=
 print("This will print as red error text!", file=s.stderr)
 
-with open('drop/Errors.txt', 'w') as f:
+with open('Files/Errors.txt', 'w') as f:
     print('This message will be written to a file.', file=f)
     print('This message will be written to a file.', file=f)
 # Flush=
@@ -101,7 +110,7 @@ numTuple = ('1', '2', '3', '4')
 print(separator.join(numTuple))
 
 # opening the file
-file = open("drop/Errors.txt", "r")
+file = open("Files/Errors.txt", "r")
 
 # reading the data from the file
 file_data = file.read()
@@ -111,7 +120,7 @@ lines = file_data.splitlines()
 print(lines)
 file.close()
 
-with open("drop/Errors.txt", "r") as f:
+with open("Files/Errors.txt", "r") as f:
     for i in f:
         print(i, end="")
 
@@ -130,3 +139,6 @@ print(dict_str)
 print('{0:#x}'.format(1))
 print('{0:06}'.format(1))
 print("{:06.2f}".format(12))
+
+euro = "\N{euro sign}"
+

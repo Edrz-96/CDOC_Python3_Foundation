@@ -10,9 +10,6 @@
 # Memory intensive - Its objects are generally very inefficient in memory usage, making it important to keep track of memory usage in a project.
 # Dynamically-typed - Many consider this to be an advantage, as it improves flexibility, but others would rather know the type any variable will be throughout runtime.
 
-import this as t
-t.d
-
 
 def run():
     print("Running from main!")

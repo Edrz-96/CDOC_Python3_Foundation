@@ -100,6 +100,9 @@ f.close()
 # 2) sending python data over a TCP connection in a multi-core or distributed system (marshalling)
 # Assuming safe to do so
 
+
+
+slice([1, 2, 3, 4, 5], 2, 4)
 # Small example
 import pickle
 
