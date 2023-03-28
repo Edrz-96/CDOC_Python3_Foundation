@@ -6,14 +6,11 @@
 
 import sys as s
 
-
 my_str = "hello world"
 my_str_as_bytes = str.encode(my_str)
-print(type(my_str_as_bytes)) # ensure it is byte representation
+print(type(my_str_as_bytes))  # ensure it is byte representation
 my_decoded_str = my_str_as_bytes.decode()
-print(type(my_decoded_str)) # ensure it is string representation
-
-
+print(type(my_decoded_str))  # ensure it is string representation
 
 # The print function
 # End=
@@ -141,4 +138,3 @@ print('{0:06}'.format(1))
 print("{:06.2f}".format(12))
 
 euro = "\N{euro sign}"
-
