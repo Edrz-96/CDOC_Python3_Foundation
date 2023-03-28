@@ -1,6 +1,6 @@
 import os, json, openai
 
-key = "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"
+key = "key"
 
 
 def ask_open_ai(p, k):

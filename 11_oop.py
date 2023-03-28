@@ -1,4 +1,4 @@
-lass Person:
+class Person:
     no_of_people = 0
 
     def __init__(self, first_name, last_name, age):  # Constructor
