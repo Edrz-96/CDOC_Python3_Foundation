@@ -21,12 +21,16 @@ def solution_two():
 
 def solution_three():
     text = input("Enter text")
-    text_for_join = text.replace(" ", "")
-    print(text_for_join)
-    if text_for_join == text_for_join[::-1]:
+    text_for_join = text.replace(" ", "").replace(".", "").replace(",", "")
+    text = text_for_join.lower()
+    if text == text[::-1]:
         print("Input is palindrome")
     else:
         print("Input isn't a palindrome")
+
+
+solution_three()
+
 
 
 if __name__ == '__main__':
